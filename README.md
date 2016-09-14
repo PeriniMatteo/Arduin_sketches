@@ -1,2 +1,2 @@
-# Arduin_sketches
+# Arduino_sketches
 Some useful Arduino Sketches
