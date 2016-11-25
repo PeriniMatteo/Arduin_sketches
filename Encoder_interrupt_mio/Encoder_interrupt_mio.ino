@@ -1,3 +1,9 @@
+//
+// You need to check which pin is better to use for your Arduino board here:
+// https://www.arduino.cc/en/Reference/AttachInterrupt 
+//
+// You have to change two lines below
+
 int encoderPin1 = 2;
 int encoderPin2 = 3;
 long int count     = 0;
@@ -19,10 +25,10 @@ void setup() {
   digitalWrite(encoderPin1, INPUT_PULLUP); //turn pullup resistor on
   digitalWrite(encoderPin2, INPUT_PULLUP); //turn pullup resistor on
 
- 
+/////////   CHANGE HERE   ////////////////////////////////////////////////////////
   attachInterrupt(0, updateEncoder, CHANGE); //correspond to pin D2 in Arduino UNO
   attachInterrupt(1, updateEncoder, CHANGE); //correspond to pin D3 in Arduino UNO
- 
+//////////////////////////////////////////////////////////////////////////////////
 }
  
 void loop(){
